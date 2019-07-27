@@ -2,7 +2,7 @@
 <html>
 	<head>
 	        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	        <title>Far Away from the Galaxy</title>
+	        <title>StartPage</title>
 	        <link rel="shortcut icon" type="image/png" href="icons/favicon_01.png"/>
 	        <link rel="stylesheet" type="text/css" href="style.css">
 	        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
@@ -27,20 +27,20 @@
 				var n = now.getHours();
 				
 				if ( n >= 12 && n <= 17 ) {
-				       	picture = "url('background/background01.png')";
+				       	picture = "url('background/background01.jpg')";
 					color1 = "#EE7546";
 					color2 = "#CA6769";
-					message="おはよう"
+					message=""
 				} else if ( n >= 0  && n <= 11) {
-					picture = "url('background/background02.png')";
+					picture = "url('background/background02.jpg')";
 					color1 = "#557780";
 					color2 = "#2CC990";
-					message=" こんにちは"
+					message=""
 				} else if ( n >= 18 && n <= 24 ) {
-					picture = "url('background/background03.png')";
+					picture = "url('background/background03.jpg')";
 					color1 = "#444444";
 					color2 = "#5A5A5A";
-					message=" こんばんは"
+					message=""
 				} 
 				document.getElementById("container").style.background = picture;
 				document.getElementById("border").style.background = color1;
@@ -104,15 +104,8 @@
 	                           		<input  id="searchbox" name="q" type="text" autocomplete="off" class="cleardefault" maxlength="100"   placeholder="search engine ..." size="17" autofocus="autofocus" />
 	                           		<input type="submit" id="image-button" value=""></input>
 	                           </div>
-			<div id="details">
-				<div id="weather">
-					<h2 id="description"></h2>
-					<h3 id="temp_curr"></h3>
-				</div> 
-			</div>
 			<div id="message"></div>
 	        	</div>
 	</body>
 	<script type="text/javascript" src="js/search.js"></script>
-  	<script src="js/weather.js"></script>
 </html>
